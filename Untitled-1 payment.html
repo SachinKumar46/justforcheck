@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="author" content="Webestica.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Payment page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="mainBody">
+      <div class="container-fluid px-0  headerTop overflow-visible" >
+        <nav class="navbar navbar-expand-lg  py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s" style="margin: 0px 65px;">
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse1">
+                <div class="navbar-nav p-2 pt-0" >
+                  <a  href="/Dashboard.html" class="navbar-brand ms-4 mt-1"><img src="/Images/Expert-removebg-preview.png" alt="" width="60"><p class="text-white fs-6">ExpertDesk</p> </a>
+                  <div class=" text-black-50  position-relative ms-4 mt-3">
+                    <i class=" fa-solid fa-magnifying-glass position-absolute rounded-end searchIcon text-white"></i>
+                    <input type="text" placeholder="I need to consult for..." class="form-control text-black-50 d-inline-block" style="width: 380px;">
+                  </div>
+                    <a href="#" class="nav-item nav-link mt-2 text-white" style="margin-left:180px"><h6 class="" ></h6> Our Services</a>
+                    <a href="#" class="nav-item nav-link ms-4 mt-2"> <button type="button" class="btn  text-white" type="button"  style="background-color: #00B5F0;">Consult Now</button></a>
+                    <a href="#" class="nav-item nav-link text-white ms-4 mt-3"><i class=" fa fa-thin fa-bell fs-3"></i></a>
+                    <a href="#" class="nav-item nav-link ms-4 mt-2 "> <button type="button" class="btn fs-6  bg-white text-black" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModalLogin">Login</button></a>
+                    <a href="#" class="nav-item nav-link text-white ms-4  mt-2"><i class="fa fa-thin fa-bars fs-2  mt-1" ></i></a>
+
+                    <!-- Model 1 (Dialog-box) start -->
+                    <div class="modal fade" id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >             
+                      <div class="modal-dialog modal-xl modal-dialog-centered " >
+                        <div class="modal-content forDialogBoxRadius1">
+                          <div class="modal-body p-0"  >
+                            <div class="row" >
+                              <div class="col">
+                                <span>
+                                  <img src="/Images/img1.png" alt="" srcset="" class="w-100 opacity-100"   height="490"  style="border-radius: 23px 0px 0px 23px;" >
+                                  <a href="#" class="navbar-brand ms-4 mt-1 text-decoration-none" 
+                                    style="position: absolute;
+                                    left: 13px;
+                                    top: 25px;
+                                    z-index: 0;"><img src="/Images/Expert-removebg-preview.png" alt="" width="80">
+                                  <p class="text-white fs-6">ExpertDesk</p> 
+                                </a>
+                                </span>
+                              </div>
+                              <div class="col" >
+                                <div class="row mt-3">
+                                  <div class="col">
+                                    <div class=" d-flex justify-content-center" id="forDialogLoginButtonColor" >
+                                      <button type="button" class="border-0  text-white fw-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color:  #00B5F0;">
+                                        Login
+                                      </button> 
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="col">
+                                    <div class="d-flex justify-content-center"  >
+                                      <button type="button" class="border-0 text-muted bg-white fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                                        Sign Up
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <!-- <button type="button" class="btn-close btn-close-white forCLoseButton" aria-label="Close" data-bs-dismiss="modal" style="margin: -32px -21px;"></button> -->
+                                    <button type="button" class=" btn-close btn-close-white rounded-circle p-2" data-bs-dismiss="modal" aria-label="Close" style="margin: -32px -21px; background-color: black;" ></button>
+                                </div>
+                                
+                                <form action="" style="margin: 60px 30px;">
+                                  <input type="text" placeholder="Phone Number" class="form-control-lg w-100 form-control"><br>
+                                  <input type="text" placeholder="OTP" class="form-control-lg w-100 form-control "><br>
+                                  <p class="fs-6" style="color: #00B5F0;;">Resend OTP</p>
+                                  <button class="border-0 rounded-2 text-white text-uppercase p-2 fs-6 w-100" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalLogin" style="background-color: #00B5F0;">Login</button>
+                                  <div class="d-flex justify-content-center m-4 text-muted fw-bold">
+                                    <hr style="width: 50%;">
+                                    <p class="m-1">OR</p>
+                                    <hr style="width: 50%;">
+                                    </div> 
+                                    <div class="position-relative">
+                                      <img src="/Images/Google-removebg-preview.png" alt="" srcset="" class=" bg-white position-absolute top-25 m-2 rounded-1"> 
+                                      <button class="border-0 rounded-2 text-white p-2 fs-5 w-100 " type="button" data-bs-toggle="modal" data-bs-target="#exampleModalLogin" style="background-color: #4285F4;">Sign in With Google</button>
+                                    </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     </div>  
+                     <!-- Model1 (Dialog-box) End -->
+
+
+                     <!-- Model2 (Dialog-box) start -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                      <div class="modal-dialog modal-xl modal-dialog-centered " >
+                        <div class="modal-content forDialogBoxRadius2">
+                          <div class="modal-body p-0"  >
+                            <div class="row" >
+                              <div class="col">
+                                <span><img src="/Images/img1.png" alt="" srcset="" class="w-100 opacity-100" style="border-radius: 23px 0px 0px 23px; padding: 0.6px; " >
+                                  <a href="#" class="navbar-brand ms-4 mt-1 text-decoration-none" 
+                                    style="position: absolute;
+                                    left: 13px;
+                                    top: 25px;
+                                    z-index: 0;"><img src="/Images/Expert-removebg-preview.png" alt="" width="80">
+                                  <p class="text-white fs-6">ExpertDesk</p> 
+                                </a>
+                                </span>
+                              </div>
+                              <div class="col" >
+                                <div class="row mt-3">
+                                  <div class="col">
+                                    <div class=" d-flex justify-content-center" >
+                                      <button type="button" class="border-0 bg-white text-muted " data-bs-toggle="modal" data-bs-target="#exampleModalLogin" style="font-size: 18px;">
+                                        Login
+                                      </button> 
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="col">
+                                    <div class="d-flex justify-content-center" id="forDialogSignUpButtonColor" >
+                                      <button type="button" class="border-0 text-white fw-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color:  #00B5F0;">
+                                        Sign Up
+                                      </button>
+                                    </div>
+                                  </div>
+                                    <button type="button" class=" btn-close btn-close bg-dark text-white rounded-circle p-2" data-bs-dismiss="modal" aria-label="Close" style="margin: -32px -21px;" ></button>
+                                </div>
+                                
+                                
+                                <form action="" style="margin: 40px 30px;">
+                                  <div class="row">
+                                    <div class="col-2">
+                                      <select  class="form-select text-muted" style="height: 47px; width: 69px;">
+                                        <option selected>Mr</option>
+                                        <option>Ms</option>
+                                        <option>Others</option>
+                                      </select>
+                                     
+                                    </div>
+
+                                    <div class="col-10 ">
+                                      <input type="text" placeholder="Name" class=" form-control-lg w-100 form-control"><br>
+                                    </div>
+                                  </div>
+                                  <input type="text" placeholder="Mobile Number(OTP required)" class="form-control-lg w-100 form-control"><br>
+                                  <input type="text" placeholder="Email Id" class="form-control-lg w-100 form-control"><br>
+                                  <input type="text" placeholder="Date of Birth" class="form-control-lg w-100 form-control "><br>
+                                  <button class=" p-2 fs-5 w-100 text-white border-0 rounded-2 text-uppercase fw-light" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #4285F4;">Sigh up</button>
+                                  
+                                  <div class="d-flex justify-content-center m-3 text-muted ">
+                                    <hr style="width: 50%;">
+                                    <p class="m-1">OR</p>
+                                    <hr style="width: 50%;">
+                                    </div> 
+                                    <div class="position-relative">
+                                     <span> <img src="/Images/Google-removebg-preview.png" alt="" srcset="" class=" bg-white position-absolute m-2  rounded-1 " style="top: -1px; left: 3px;"> </span>
+                                      <button class=" p-2 fs-5 w-100 text-white border-0 rounded-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #4285F4;">Sign in With Google</button>
+                                    </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
+                    <!-- Model2 (Dialog-box) End -->
+                </div>
+            </div>
+        </nav>
+    </div>
+
+       
+    <!-- Navbar -->
+    <div class="forNavSetting">
+    <div class="container-fluid px-0 forNavbar">
+      <nav class="navbar navbar-expand-lg  py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s"   >
+          <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav p-2 text-uppercase">
+                  <a href="#" class="nav-item nav-link active ms-5 text-white forStartUp fw-light">START UP</a>
+                  <a href="#" class="nav-item nav-link active ms-5">BUSINESS CONVERSION</a>
+                  <a href="#" class="nav-item nav-link active ms-5">BUSINESS CLOSURE</a>
+                  <a href="#" class="nav-item nav-link active ms-5">INTELLECTUAL PROPERTY</a>
+                  <a href="#" class="nav-item nav-link active ms-5">COMPLIANCE</a>
+                  <a href="#" class="nav-item nav-link active ms-5">TAX FILLING</a>
+                  <a href="#" class="nav-item nav-link active ms-5">LEGAL</a>
+              </div>
+          </div>
+      </nav>
+  </div>
+</div>
+  <!-- Navbar End -->
+
+
+  <!-- main -->
+    <div>
+    <span>
+      <img src="/Images/Expert-new.png" alt="" srcset="" class="w-100">
+    </span>
+        <div class=" w-100 d-inline-block text-center p-2" style="background-color: #9C9C9D;">
+          <small style="margin-left: 650px;" class="text-white fs-6">Available Balance:     200    ₹</small>
+          <button  type="button" class="btn bg-white" style="border: 1px solid #17ad03; color: #17ad03; margin-left: 50px; padding: 8px 35px;">Rechareg</button>
+          <small style="padding-left: 50px;" class="text-white fs-6" >ID:   1568725</small>
+        </div>
+
+          <section id="poppinsRegularForPayment">
+              <div class="row position-relative">
+              <strong class="text-center fs-4 text-uppercase my-5" style="color: #4e4f51;"> Paymen<span class=" forOurExperts"></span>t information</strong>
+              </div>
+              <div class="container ">
+                <div class="row mx-auto "id="forPublicPage" >
+                  <div class="col-12 shadow p-3 mb-5 bg-body rounded" >
+                    <div class=" border">
+                    <div style="background-color: #75CC5B;">
+                      <p class="text-white p-3 fs-6 fw-bold ms-3"><i class="fa-solid fa-credit-card me-3"></i>Payment Option</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 opacity-75" >
+                        <span class="d-block  p-2">
+                            <img class="me-2 ps-4" src="/Images/creditcard.png" alt="" srcset=""><small class="fw-bolder" style="color: #17ad03;">Credit Card</small>
+                        </span>
+
+                        <span class="d-block border p-2 ">
+                            <img class="me-2 ps-3" src="/Images/creditcard.png" alt="" srcset=""><small class=" text-black" style="font-weight: 600;" >Credit Card</small>
+                        </span>
+
+
+                        <span class="d-block border p-2 ">
+                            <img class="me-2 ps-3" src="/Images/networking.png" alt="" srcset=""><small class=" text-black" style="font-weight: 600;" >Networking</small>
+                        </span>
+
+                        <span class="d-block border p-2">
+                            <img class="me-2 ps-3" src="/Images/paytm.png" alt="" srcset=""><small class=" text-black" style="font-weight: 600;" >Paytm</small>
+                        </span>
+
+                        <span class="d-block border p-2">
+                            <img class="me-2 ps-3" src="/Images/UPI.png" alt="" srcset=""><small class=" text-black" style="font-weight: 600;" >UPI</small>
+                        </span>
+
+                        <span class="d-block border p-2">
+                            <img class="me-2 ps-3" src="/Images/paytapp.png" alt="" srcset=""><small class=" text-black" style="font-weight: 600;" >Pay Zap</small>
+                        </span>
+
+                        <span class="d-block border p-2">
+                            <img class="me-2 ps-3" src="/Images/phonepay.png" alt="" srcset=""><small class=" text-black" style="font-weight: 600;" >Phone Pay</small>
+                        </span>
+
+                        <span class="d-block border p-2">
+                            <img class="me-2 ps-3" src="/Images/oldmoney.png" alt="" srcset=""><small class=" text-black" style="font-weight: 600;" >Old Money</small>
+                        </span>
+
+                        <span class="d-block border p-2">
+                            <img class="me-2 ps-3" src="/Images/freecharge.png" alt="" srcset=""><small class=" text-black" style="font-weight: 600;" >FreeCharge</small>
+                        </span>
+
+                        <span class="d-block border " style="padding: 54px;">
+                        </span>
+                        </div>
+
+                             <div class="col-6">
+                                <form action="">
+                                    <div class=" position-relative w-75" >
+                                        <label for="inputEmail4" class="form-label fw-bold text-muted" style="font-size: small;">Card Number</label>
+                                        <input type="email" class="form-control " id="inputEmail4" >
+                                        <span class="position-absolute d-inline-block fw-bold" style="margin-left: 97%;top: 42px;">
+                                          *
+                                          </span>
+                                    </div> <br>
+                                    
+                                      <div class=" position-relative d-flex align-items-center justify-content-between" >
+                                        <div class="w-25">
+                                            <label for="" style="font-size: small; " class="form-label fw-bold text-muted">Card Expiry Date</label>
+                                                <select name="month"  class="form-select text-muted" >
+                                                    <option  selected>month</option>
+                                                    <option value="01">January</option>
+                                                    <option value="02">February</option>
+                                                    <option value="03">March</option>
+                                                    <option value="04">April</option>
+                                                    <option value="05">May</option>
+                                                    <option value="06">June</option>
+                                                    <option value="07">July</option>
+                                                    <option value="08">August</option>
+                                                    <option value="09">September</option>
+                                                    <option value="10">October</option>
+                                                    <option value="11">November</option>
+                                                    <option value="12">December</option>
+                                                 </select> 
+                                        </div>
+
+                                        <div class="w-25" >
+                                            <select name="year" class="form-select text-muted" >
+                                                <option value="year" selected>year</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2019">2019</option>
+                                           </select>
+                                        </div>
+
+                                        <div class="w-25" >
+                                            <div class="position-relative">
+                                                <label for="" class="form-label fw-bold text-muted" style="font-size: small;">CVV Number</label>
+                                                <input type="text" class="form-control " placeholder="" style=" height: 44px;" >
+                                                <span class=" d-inline-block position-absolute fw-bold " style="top: 40px; right: 0;">
+                                                 *
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="w-25">
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control " placeholder=""  style="width: 75px; height: 44px;" >
+                                                <span class=" d-inline position-absolute " 
+                                                style="top: 5px;
+                                                width: 75px;
+                                                border-bottom: 8px solid black;">
+                                                </span>
+
+                                                <span class=" d-inline-block position-absolute mt-2 ms-2" 
+                                                style="top: 12px;
+                                                width: 30px;
+                                                border-bottom: 6px solid #8A8A8A;">
+                                    
+                                                </span>
+
+                                                <span class=" d-inline-block position-absolute fw-bold mt-1 ms-5 " 
+                                                style="top: 12px;
+                                                width: 25px;
+                                                border: 1px solid #F99B05;
+                                                color: #F99B05;
+                                                ">
+                                                <small>123</small>
+                                                </span>
+
+
+                                            </div>
+                                        </div>
+                                     </div>
+
+                                        <input type="checkbox" id="checkbox" name="checkboc" value="checkbox" checked  class="largerCheckbox fs-1" >
+                                        <label for="sav" style="font-size: small;" class="fw-bold"> Save this chard for faster Checkouts</label>
+
+
+                                    <div class=" position-relative w-50" >
+                                        <input type="type" class="form-control " id="input"  placeholder="Enter Card Label">
+                                        <span class="position-absolute d-inline-block fw-bold" style="right: 0;top: 11px;">* </span>
+                                        <span class="position-absolute d-inline" style="right: -30px; top: 6px;">
+                                        <i class="fa-solid fa-question rounded-circle p-1 text-success" style=" border: 1px solid #17ad03;"></i>
+
+                                        </span>
+                                      </div>
+                                        <!-- <span class="position-absolute" style="top: 0;"> -->
+                                        <!-- </span> -->
+                                </form> 
+                                <button type="submit" class="btn text-white m-2" style="background-color: #FFC000; padding: 5px 15px;">Make Payment</button><br>
+                                <small class="fw-bold">Note:</small><br>
+                                <small class="text-muted opacity-75" style="font-size: small;">After clicking on the <q>make payments</q> button might be taken to Your bank's website for 3d secure authentication using a pop up window</small>
+                                <div class="float-end p-5">
+                                <img src="/Images/mastercard-securecard.png" alt="" srcset="">
+                                <img src="/Images/verifiedbyvisa.png" alt="" srcset="">
+                               <img src="/Images/securedbypay.png" alt="" srcset="">
+                               <img src="/Images/safekey.png" alt="" srcset="">
+                              </div>
+                            </div>
+                        
+                        <div class="col-3" style="background-color: #F2F7F1; ">
+                            <div class="">
+                                <p class="text-muted m-3"> Payments Details</p>
+                                <input type="text" name="" id="" class="form-control" placeholder="Total Amount              Rs100.0"><br>
+                                <input type="text" name="" id="" class="form-control" placeholder="GST @ 18%                      Rs18.0">
+                               <span class="mt-3 d-block"><a >Total Payable Ammount</a>  <b class="ms-2 fw-bold">Rs 180.0</b></span> 
+                               <img src="/Images/forpayment.png" alt="" srcset="" class="m-auto d-block mt-3 img-fluid" >
+                            </div>  
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+        
+
+  <!-- Footer -->
+  <footer class="text-center text-light mt-5" style="background-color: #4E4F51;">
+    <section class=" pt-3  ">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              About Us
+            </h6>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident molestiae reprehenderit debitis sit quasi natus rem odit fugit quaerat. Omnis cupiditate voluptatibus exercitationem tenetur dolor repudiandae corrupti voluptas numquam nostrum. </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              QUICK links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Terms & Condition</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Privacy Policy</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">About us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Disclaimer</a>
+            </p>
+            <p>
+                <a href="#!" class="text-reset text-decoration-none fw-bold">Expert signin/signup</a>
+              </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-2 mx-auto  mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contact us</h6>
+            <p><i class="fas fa-phone me-3"></i>+91-9625383790</p>
+            <p><i class="fas fa-envelope me-3"></i>info@gmail.com</p>
+            <h6 class="text-uppercase fw-bold mb-4">find us on</h6>
+            <section class="mb-4">
+                <a class="btn  bg-white btn-floating rounded-circle m-1 text-black" href="https://www.facebook.com/TheBrancoSoft/" role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn bg-white btn-floating rounded-circle m-1 text-black" href="https://in.linkedin.com/company/brancosoft" role="button"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+                <a class="btn bg-white btn-floating rounded-circle m-1 text-black" href="https://mobile.twitter.com/brancosoft" role="button"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </section>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto   mb-md-0  mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              download our app
+            </h6>
+            <img src="/Images/google_pay.jpg" alt="" srcset="" class="rounded img-fluid ">
+            <img src="/Images/Google-Play.jpg" alt="" class="mt-lg-4 rounded img-fluid mt-md-3">
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+  <div class="text-center pb-4" >
+    © 2020 ExpertDesk, Inc. All Right Reserved
+  </div>
+  </footer>
+  <!-- Footer -->
+    </div>
+    <script src="/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</div>
+</html>

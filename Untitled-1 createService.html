@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="author" content="Webestica.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CreateService1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+ 
+</head>
+<body>
+    <div id="FontFamilyForCreateService">
+      <div class="container-fluid px-0  headerTop overflow-visible" >
+        <nav class="navbar navbar-expand-lg  py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse1">
+                <span class="navbar-toggler-icon"></span>
+            </button>   
+            <div class="collapse navbar-collapse" id="navbarCollapse1">
+                <div class="navbar-nav p-2 pt-0">
+                  <a  href="/Dashboard.html" class="navbar-brand ms-5 mt-1"><img src="/Images/Expert-removebg-preview.png" alt="" width="60"><p class="text-white fs-6">ExpertDesk</p> </a>
+                  <div class=" text-black-50  position-relative ms-4 mt-3">
+                    <i class=" fa-solid fa-magnifying-glass position-absolute rounded-end searchIcon text-white"></i>
+                    <input type="text" placeholder="I need to consult for..." class="form-control text-black-50 d-inline-block" style="width: 380px;">
+                  </div>
+                    
+
+                    <a href="#" class="nav-item nav-link  text-white mt-2 " style="margin-left: 320px;"> wallet 
+                    <button class="btn border text-white ms-1"><b> ₹ </b>900.0</button> 
+                    </a>
+                    <a href="#" class="nav-item nav-link text-white mt-3"><i class=" fa fa-thin fa-bell fs-3" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
+                    <span><img src="/Images/CreateService.png" alt="" srcset="" class="bg-dark rounded-circle mt-3 ms-2" width="50"></span>
+                    <a href="#" class="nav-item nav-link text-white ms-2 mt-3 ">Brijesh<i class="fa-solid fa-chevron-down fs-5 ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal2"></i></a>
+
+
+                    <!-- Modal open click on bell icon start-->
+                    <div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-left: 200px;">
+                        <div class="modal-dialog  modal-sm" >
+                          <div class="modal-content" style="width: 350px;">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-6 text-muted" id="exampleModalLabel">Notification</h1>
+                               <button type="button" class=" btn btn-sm text-white rounded-pill" id="NotificationBell" data-bs-dismiss="modal" >New 5</button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-1">
+                                  <a><i class="fa-solid fa-user 2xl rounded-circle p-1  text-white mt-2" style="background-color: #46BE8A; "></i></a>
+                                </div>
+                                <div class="col-11">
+                                  <small style="color: #5A5A5A ; font-size: 14px; font-weight:bolder;"> This is customer screen . Customer will 
+                                    receive notification like " CA Amit Kumar 
+                                    is now online for chat or call" . Get 20% 
+                                    off on all consultations today ! use Code 
+                                    TODAY20 .
+                                  </small>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer d-inline-block text-muted fs-6 opacity-50" style="background-color: #F3F7F9;">
+                                <a class="text-muted text-decoration-none cursor-pointer">All Notification</a>
+                               <i class="fa-solid fa-gear"style="padding-left:170px"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     <!-- Modal open click on bell icon start-->
+
+                      <!-- Modal open click on DropDowndown start-->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-left: 525px; margin-top: 50px;">
+                        <div class="modal-dialog  modal-sm position-relative" >
+                            <span class="triangle-up position-absolute d-inline-block"></span>
+                          <div class="modal-content" style="width: 180px;">
+                            <div class="modal-body border-top-0">
+                                <div class="text-muted">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <p  class="d-inline-block ms-1" >Setting</p>
+                                    <i class="fa-solid fa-chevron-right" style="margin-left: 47px;"></i>
+                                </div>
+
+                                <div class="text-muted">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                    <p  class="d-inline-block ms-1" >Help</p>
+                                    <i class="fa-solid fa-chevron-right" style="margin-left: 66px;"></i>
+
+                                </div>
+
+                                <div class="text-muted">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p  class="d-inline-block ms-1" >Order History</p>
+                                </div>
+
+                                <div class="text-muted">
+                                  <i class="bi bi-envelope-fill"></i>
+                                    <p  class="d-inline-block ms-1" >Message Box</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-inline-block text-muted" style="margin-top: -16px;" >
+                                <i class="fa-solid fa-power-off"></i>
+                                <p  class="d-inline-block ms-1" >Logout</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                     <!-- Modal close click on  Dopwdown End-->
+
+                    <!-- Model 1 (Dialog-box) start -->
+                    <div class="modal fade" id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >             
+                      <div class="modal-dialog modal-xl modal-dialog-centered " >
+                        <div class="modal-content forDialogBoxRadius1">
+                          <div class="modal-body p-0"  >
+                            <div class="row" >
+                              <div class="col">
+                                <span><img src="/Images/img1.png" alt="" srcset="" class="w-100 opacity-100"   height="490"  style="border-radius: 23px 0px 0px 23px;" >
+                                  <a href="#" class="navbar-brand ms-4 mt-1 text-decoration-none" 
+                                    style="position: absolute;
+                                    left: 13px;
+                                    top: 25px;
+                                    z-index: 0;"><img src="/Images/Expert-removebg-preview.png" alt="" width="80">
+                                  <p class="text-white fs-6">ExpertDesk</p> 
+                                </a>
+                                </span>
+                              </div>
+                              <div class="col" >
+                                <div class="row mt-3">
+                                  <div class="col">
+                                    <div class=" d-flex justify-content-center" id="forDialogLoginButtonColor" >
+                                      <button type="button" class="border-0  text-white fw-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color:  #00B5F0;">
+                                        Login
+                                      </button> 
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="col">
+                                    <div class="d-flex justify-content-center"  >
+                                      <button type="button" class="border-0 text-muted bg-white fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                                        Sign Up
+                                      </button>
+                                    </div>
+                                  </div>
+                                    <button type="button" class=" btn-close btn-close-white rounded-circle p-2" data-bs-dismiss="modal" aria-label="Close" style="margin: -32px -21px; background-color: black;" ></button>
+                                </div>
+                                
+                                <form action="" style="margin: 60px 30px;">
+                                  <input type="text" placeholder="Phone Number" class="form-control-lg w-100 form-control"><br>
+                                  <input type="text" placeholder="OTP" class="form-control-lg w-100 form-control "><br>
+                                  <p class="fs-6" style="color: #00B5F0;;">Resend OTP</p>
+                                  <button class="border-0 rounded-2 text-white text-uppercase p-2 fs-6 w-100" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalLogin" style="background-color: #00B5F0;">Login</button>
+                                  <div class="d-flex justify-content-center m-4 text-muted fw-bold">
+                                    <hr style="width: 50%;">
+                                    <p class="m-1">OR</p>
+                                    <hr style="width: 50%;">
+                                    </div> 
+                                    <div class="position-relative">
+                                      <img src="/Images/Google-removebg-preview.png" alt="" srcset="" class=" bg-white position-absolute top-25 m-2 rounded-1"> 
+                                      <button class="border-0 rounded-2 text-white p-2 fs-5 w-100 " type="button" data-bs-toggle="modal" data-bs-target="#exampleModalLogin" style="background-color: #4285F4;">Sign in With Google</button>
+                                    </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     </div>  
+                     <!-- Model1 (Dialog-box) End -->
+
+
+                     <!-- Model2 (Dialog-box) start -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                      <div class="modal-dialog modal-xl modal-dialog-centered " >
+                        <div class="modal-content forDialogBoxRadius2">
+                          <div class="modal-body p-0"  >
+                            <div class="row" >
+                              <div class="col">
+                                <span><img src="/Images/img1.png" alt="" srcset="" class="w-100 opacity-100" style="border-radius: 23px 0px 0px 23px; padding: 0.6px; " >
+                                  <a href="#" class="navbar-brand ms-4 mt-1 text-decoration-none" 
+                                    style="position: absolute;
+                                    left: 13px;
+                                    top: 25px;
+                                    z-index: 0;"><img src="/Images/Expert-removebg-preview.png" alt="" width="80">
+                                  <p class="text-white fs-6">ExpertDesk</p> 
+                                </a>
+                                </span>
+                              </div>
+                              <div class="col" >
+                                <div class="row mt-3">
+                                  <div class="col">
+                                    <div class=" d-flex justify-content-center" >
+                                      <button type="button" class="border-0 bg-white text-muted " data-bs-toggle="modal" data-bs-target="#exampleModalLogin" style="font-size: 18px;">
+                                        Login
+                                      </button> 
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="col">
+                                    <div class="d-flex justify-content-center" id="forDialogSignUpButtonColor" >
+                                      <button type="button" class="border-0 text-white fw-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color:  #00B5F0;">
+                                        Sign Up
+                                      </button>
+                                    </div>
+                                  </div>
+                                    <button type="button" class=" btn-close btn-close bg-dark text-white rounded-circle p-2" data-bs-dismiss="modal" aria-label="Close" style="margin: -32px -21px;" ></button>
+                                </div>
+                                
+                                
+                                <form action="" style="margin: 40px 30px;">
+                                  <div class="row">
+                                    <div class="col-2">
+                                      <select  class="form-select text-muted" style="height: 47px; width: 69px;">
+                                        <option selected>Mr</option>
+                                        <option>Ms</option>
+                                        <option>Others</option>
+                                      </select>
+                                     
+                                    </div>
+
+                                    <div class="col-10 ">
+                                      <input type="text" placeholder="Name" class=" form-control-lg w-100 form-control"><br>
+                                    </div>
+                                  </div>
+                                  <input type="text" placeholder="Mobile Number(OTP required)" class="form-control-lg w-100 form-control"><br>
+                                  <input type="text" placeholder="Email Id" class="form-control-lg w-100 form-control"><br>
+                                  <input type="text" placeholder="Date of Birth" class="form-control-lg w-100 form-control "><br>
+                                  <button class=" p-2 fs-5 w-100 text-white border-0 rounded-2 text-uppercase fw-light" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #4285F4;">Sigh up</button>
+                                  
+                                  <div class="d-flex justify-content-center m-3 text-muted ">
+                                    <hr style="width: 50%;">
+                                    <p class="m-1">OR</p>
+                                    <hr style="width: 50%;">
+                                    </div> 
+                                    <div class="position-relative">
+                                     <span> <img src="/Images/Google-removebg-preview.png" alt="" srcset="" class=" bg-white position-absolute m-2  rounded-1 " style="top: -1px; left: 3px;"> </span>
+                                      <button class=" p-2 fs-5 w-100 text-white border-0 rounded-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #4285F4;">Sign in With Google</button>
+                                    </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
+                    <!-- Model2 (Dialog-box) End -->
+                </div>
+            </div>
+        </nav>
+    </div>
+
+       
+    <!-- Navbar -->
+    <!-- <nav class="navbar navbar-expand-lg bg-secondary ">
+        <div class="container  mx-auto hamburgerTop" >
+        <a  href="/Dashboard.html" class="navbar-brand ms-lg-5"><img src="/Images/Expert-removebg-preview.png" alt="" width="80"><p class="text-white fs-6">ExpertDesk</p> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <div class="InputBox  text-black-50  position-relative d-flex h-100 me-auto " role="search">
+              <i class=" fa-solid fa-magnifying-glass position-absolute rounded-end searchIcon text-white "></i>
+              <input type="search" placeholder="I need to consult for..." aria-label="Search" class="form-control text-black-50 d-inline-block" style="width: 380px;">
+            </div>
+            <ul class="navbar-nav d-flex  mb-2 mb-lg-0 OurService ms-xl-2">
+                <li class="nav-item me-4 ORS">
+                    <a class="nav-link text-white" href="#">Our Service</a>
+                </li>
+
+                <li class="nav-item me-4  ">
+                  <a href=""  href="/ConsultNow.html" target="_self" class="ConsultNowButton">
+                      <button type="button" class="btn text-white" href="#" style="background-color: #00B5F0;">Consult Now</button>
+                  </a>  
+                </li>
+
+                <li class="nav-item me-4 ">
+                   <a href="" data-bs-toggle="modal" data-bs-target="#exampleModalBell"> <i class="fa fa-bell fs-1 text-white" href="#" ></i></a>
+                </li>
+
+                <li class="nav-item me-4 ">
+                    <button type="button" class="btn bg-white" data-bs-toggle="modal" data-bs-target="#exampleModalLogin" href="#">Login</button>
+                </li>
+                <li  class="nav-item">
+                    <a href="#" onclick="openNav()" class="toggle me-lg-5"><i class ="fa fa-thin fa-bars fs-2 text-white"></i></a>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </nav> -->
+    <!-- <div class="container-fluid px-0 forNavbar"> -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container mx-auto">
+          <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav p-2 text-uppercase">
+                  <a href="#" class="nav-item nav-link active ms-5 ">Dashboard</a>
+                  <a href="#" class="nav-item nav-link active ms-5 forCreateService fw-light ps-3 text-white">Create Service</a>
+                  <a href="#" class="nav-item nav-link active ms-5">My post</a>
+                  <a href="#" class="nav-item nav-link active ms-5" style="margin-right: 95px;">community</a>
+                  <a href="#" class="nav-item nav-link active">Chat</a>
+                  <label class="SwitchButtonCreateService1" >
+                      <input type="checkbox" checked>
+                      <span class="SliderDoubleCreateService1">ON</span>
+                    </label>
+                    
+                    <a href="#" class="nav-item nav-link"> Call</a>
+                    <label class="SwitchButtonCreateService1">
+                        <input type="checkbox">
+                        <span class="SliderOFFCreateService1" style="padding-left: 34px;" >OFF</span>
+                    </label>
+                  
+              </div>
+            </div>
+        </div>
+      </nav>
+
+  <!-- </div> -->
+
+   <!-- Navbar start -->
+   <nav class="navbar navbar-expand-lg forNavbar" >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+      <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent1">
+        <ul class="navbar-nav mx-auto  text-uppercase ">
+              <li class="nav-item" >
+                    <a class="nav-link active  text-black" href="#">Dashboard</a>
+              </li>
+
+              <li class="nav-item text-white ">
+                  <a class="nav-link active" href="#">Create service</a>
+              </li>
+
+              <li class="nav-item bg-white text-black">
+                  <a class="nav-link active" href="#">My post</a>
+              </li>
+
+              <li class="nav-item bg-white text-black me-auto">
+                  <a class="nav-link active" href="#">Community</a>
+              </li>
+              <a href="#" class="nav-item nav-link active">Chat</a>
+              <label class="SwitchButtonCreateService1" >
+                  <input type="checkbox" checked>
+                  <span class="SliderDoubleCreateService1">ON</span>
+                </label>
+                
+                <a href="#" class="nav-item nav-link"> Call</a>
+                <label class="SwitchButtonCreateService1">
+                    <input type="checkbox">
+                    <span class="SliderOFFCreateService1" style="padding-left: 34px;" >OFF</span>
+                </label>
+            </ul>
+  </div> 
+</nav>
+  <!-- Navbar End -->
+
+
+  <!-- main img -->
+  <span>
+    <img src="/Images/notification-home.png" alt="" srcset="" class="w-100 img-fluid">
+  </span>
+          <section>
+              <div class="row position-relative">
+              <strong class="text-center fs-4 text-uppercase my-5" style="color: #4e4f51;"> Crea<span class=" forOurExperts mt-3"></span>te service</strong>
+              </div>
+              <div class="container">
+                <div class="row mx-auto">
+                  <div class="col py-3 px-4 rounded"style="box-shadow: 0 0 7px 7px #ccc" >
+                    <h5 class="text-muted">Create Service</h5>
+                    <hr class="border-0" style="height: 2px; background-color:  gray;">
+                    <div class="row py-2 px-4">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-3">
+                                    <label class="col-form-label" for="Digital Signature" style="color: #343434; font-size: 16px; font-weight: 500;">
+                                        Digital Signature
+                                    </label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-check-input fs-4" type="checkbox" id="gridCheck" >
+                                </div>
+                            
+                                <div class="col-3">
+                                    <label class="col-form-label  " for="company Name Approval" >
+                                        company Name Approval
+                                    </label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-check-input fs-4" type="checkbox" id="gridCheck" >
+                                </div>
+    
+                                <div class="col-3">
+                                    <label class="col-form-label  " for="Capital Gain Tax">
+                                        Capital Gain Tax
+                                    </label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-check-input fs-4" type="checkbox" id="gridCheck" >
+                                </div>
+    
+                                <div class="col-3">
+                                    <label class="col-form-label  " for="Income Tax" >
+                                        Income Tax
+                                    </label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-check-input fs-4" type="checkbox" id="gridCheck" >
+                                </div>
+                            </div>
+
+                            <div class="col-9 offset-3 my-2" >
+                                <i class="fa-regular fa-plus rounded-circle p-1 fw-bold" style="color: #5ACFF5; border:2px solid #5ACFF5"></i>
+                                <p class="d-inline-block ms-1" style="color: #343434; font-size: 16px; font-weight: 500;">Add More</p>
+                            </div>
+                          
+                            <div class="row">
+                                <label for="Does Not Include" class="col-3 col-col-form-label mt-2" style="color: #343434; font-size: 16px; font-weight: 500;">Does Not Include</label>
+                                <div class="col-9">
+                                  <input type="text" class="form-control w-50  text-muted " id="inputEmail3" autocapitalize="off" autocomplete="off" style="height:50px; font-size:14pt;">
+                                </div>
+
+                                <label for="Does Not Include" class="col-3 col-col-form-label mt-4" style="color: #343434; font-size: 16px; font-weight: 500;">Others Inclusion</label>
+                                <div class="col-9">
+                                  <input type="text" class="form-control w-50  text-muted mt-3" id="inputEmail3" autocapitalize="off" autocomplete="off" style="height:50px; font-size:14pt;">
+                                </div>
+
+                                <label for="Does Not Include" class="col-3 col-col-form-label mt-4" style="color: #343434; font-size: 16px; font-weight: 500;">Delivery time</label>
+                                <div class="col-9">
+                                  <input type="text" class="form-control w-50  text-muted mt-3" id="inputEmail3" autocapitalize="off" autocomplete="off" style="height:50px; font-size:14pt;">
+                                </div>
+
+                                <label for="Does Not Include" class="col-3 col-col-form-label mt-4" style="color: #343434; font-size: 16px; font-weight: 500;">Fee</label>
+                                <div class="col-9">
+                                  <input type="text" class="form-control w-50  text-muted mt-3" id="inputEmail3" autocapitalize="off" autocomplete="off" style="height:50px; font-size:14pt;">
+                                </div>
+
+                                <label for="Does Not Include" class="col-3 col-col-form-label mt-4" style="color: #343434; font-size: 16px; font-weight: 500;">Advance</label>
+                                <div class="col-9">
+                                  <input type="text" class="form-control w-50  text-muted mt-3" id="inputEmail3" autocapitalize="off" autocomplete="off" style="height:50px; font-size:14pt;">
+                                </div>
+
+                                <div class="col-9 offset-3 my-2" >
+                                    <button type="button" class="btn text-white fw-light" style="background-color: #00B5F0; padding: 7px 30px;">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-light mt-5" style="background-color: #4E4F51;">
+    <section class=" pt-3  ">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              About Us
+            </h6>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident molestiae reprehenderit debitis sit quasi natus rem odit fugit quaerat. Omnis cupiditate voluptatibus exercitationem tenetur dolor repudiandae corrupti voluptas numquam nostrum. </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              QUICK links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Terms & Condition</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Privacy Policy</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">About us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Disclaimer</a>
+            </p>
+            <p>
+                <a href="#!" class="text-reset text-decoration-none fw-bold">Expert signin/signup</a>
+              </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-2 mx-auto  mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contact us</h6>
+            <p><i class="fas fa-phone me-3"></i>+91-9625383790</p>
+            <p><i class="fas fa-envelope me-3"></i>info@gmail.com</p>
+            <h6 class="text-uppercase fw-bold mb-4">find us on</h6>
+            <section class="mb-4">
+                <a class="btn  bg-white btn-floating rounded-circle m-1 text-black" href="https://www.facebook.com/TheBrancoSoft/" role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn bg-white btn-floating rounded-circle m-1 text-black" href="https://in.linkedin.com/company/brancosoft" role="button"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+                <a class="btn bg-white btn-floating rounded-circle m-1 text-black" href="https://mobile.twitter.com/brancosoft" role="button"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </section>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto   mb-md-0  mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              download our app
+            </h6>
+            <img src="/Images/google_pay.jpg" alt="" srcset="" class="rounded img-fluid ">
+            <img src="/Images/Google-Play.jpg" alt="" class="mt-lg-4 rounded img-fluid mt-md-3">
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+  <div class="text-center pb-4" >
+    © 2020 ExpertDesk, Inc. All Right Reserved
+  </div>
+  </footer>
+  <!-- Footer -->
+    </div>
+    <script src="/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

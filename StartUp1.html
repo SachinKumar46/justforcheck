@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="author" content="Webestica.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>StartUp1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      
+ </style>
+</head>
+
+<body>
+      <!-- hamberger start -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #4E4F51;">
+        <div class="container  mx-auto hamburgerTop" >
+        <a  href="/Dashboard.html" class="navbar-brand ms-lg-5"><img src="/Images/Expert-removebg-preview.png" alt="" width="80"><p class="text-white fs-6">ExpertDesk</p> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <div class="InputBox  text-black-50  position-relative d-flex h-100 me-auto " role="search">
+              <i class=" fa-solid fa-magnifying-glass position-absolute rounded-end searchIcon text-white "></i>
+              <input type="search" placeholder="I need to consult for..." aria-label="Search" class="form-control text-black-50 d-inline-block" style="width: 380px;">
+            </div>
+            <ul class="navbar-nav d-flex  mb-2 mb-lg-0 OurService ms-xl-2">
+                <li class="nav-item me-4 ORS">
+                    <a class="nav-link text-white" href="/CreateService1.html">Our Service</a>
+                </li>
+
+                <li class="nav-item me-4  my-2">
+                  <a href="/ConsultNow.html" class="ConsultNowButton" > <button class="btn btn-sm text-white" style="background-color: #00B5F0;">Consult Now </button>
+                  </a>  
+                </li>
+
+                <li class="nav-item me-4 ">
+                   <a href="" data-bs-toggle="modal" data-bs-target="#exampleModalBell"> <i class="fa fa-bell fs-1 text-white" href="#" ></i></a>
+                </li>
+
+                <li class="nav-item me-4 ">
+                    <button type="button" class="btn bg-white" data-bs-toggle="modal" data-bs-target="#exampleModalLogin" href="#">Login</button>
+                </li>
+                <li  class="nav-item">
+                    <a href="#" onclick="openNav()" class="toggle me-lg-5"><i class ="fa fa-thin fa-bars fs-2 text-white"></i></a>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+          <!-- Modal open click on bell icon start-->
+           <div class="modal fade mt-5" id="exampleModalBell" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-left: 200px;">
+                <div class="modal-dialog  modal-sm" >
+                  <div class="modal-content" style="width: 350px;">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-6 text-muted" id="exampleModalLabel">Notification</h1>
+                      <button type="button" class=" btn btn-sm text-white rounded-pill" id="NotificationBell" data-bs-dismiss="modal" >New 5</button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-1">
+                          <a><i class="fa-solid fa-user 2xl rounded-circle p-1  text-white mt-2" style="background-color: #46BE8A; "></i></a>
+                        </div>
+                        <div class="col-11">
+                          <small style="color: #5A5A5A ; font-size: 14px; font-weight:bolder;"> This is customer screen . Customer will 
+                            receive notification like " CA Amit Kumar 
+                            is now online for chat or call" . Get 20% 
+                            off on all consultations today ! use Code 
+                            TODAY20 .
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer d-inline-block text-muted fs-6 opacity-50" style="background-color: #F3F7F9;">
+                        <a class="text-muted text-decoration-none cursor-pointer">All Notification</a>
+                      <i class="fa-solid fa-gear"style="padding-left:170px"></i>
+                    </div>
+                  </div>
+                </div>
+           </div>
+          <!-- Modal open click on bell icon start-->
+
+          <!-- Model 1 (Dialog-box) start -->
+            <div class="modal fade" id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                <div class="modal-dialog modal-xl modal-dialog-centered " >
+                  <div class="modal-content forDialogBoxRadius1">
+                    <div class="modal-body p-0"  >
+                      <div class="row" >
+                        <div class="col">
+                          <span><img src="/Images/img1.png" alt="" srcset="" class="w-100 opacity-100"   height="490"  style="border-radius: 23px 0px 0px 23px;" >
+                            <a href="#" class="navbar-brand ms-4 mt-1 text-decoration-none" 
+                              style="position: absolute;
+                              left: 13px;
+                              top: 25px;
+                              z-index: 0;"><img src="/Images/Expert-removebg-preview.png" alt="" width="80">
+                            <p class="text-white fs-6">ExpertDesk</p> 
+                          </a>
+                          </span>
+                        </div>
+                        <div class="col" >
+                          <div class="row mt-3">
+                            <div class="col">
+                              <div class=" d-flex justify-content-center" id="forDialogLoginButtonColor" >
+                                <button type="button" class="border-0  text-white fw-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color:  #00B5F0;">
+                                  Login
+                                </button> 
+                              </div>
+                            </div>
+                            
+                            <div class="col">
+                              <div class="d-flex justify-content-center"  >
+                                <button type="button" class="border-0 text-muted bg-white fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                                  Sign Up
+                                </button>
+                              </div>
+                            </div>
+                                <button type="button" class=" btn-close btn-close bg-dark text-white rounded-circle p-2" data-bs-dismiss="modal" aria-label="Close" style="margin: -32px -21px;" ></button>
+                          </div>
+                          
+                          <form action="" style="margin: 60px 30px;">
+                            <input type="text" placeholder="Phone Number" class="form-control-lg w-100 form-control"><br>
+                            <input type="text" placeholder="OTP" class="form-control-lg w-100 form-control "><br>
+                            <p class="fs-6" style="color: #00B5F0;;">Resend OTP</p>
+                            <button class="border-0 rounded-2 text-white text-uppercase p-2 fs-6 w-100" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalLogin" style="background-color: #00B5F0;">Login</button>
+                            <div class="d-flex justify-content-center m-4 text-muted fw-bold">
+                              <hr style="width: 50%;">
+                              <p class="m-1">OR</p>
+                              <hr style="width: 50%;">
+                              </div> 
+                              <div class="position-relative">
+                                <img src="/Images/Google-removebg-preview.png" alt="" srcset="" class=" bg-white position-absolute top-25 m-2 rounded-1"> 
+                                <button class="border-0 rounded-2 text-white p-2 fs-5 w-100 " type="button" data-bs-toggle="modal" data-bs-target="#exampleModalLogin" style="background-color: #4285F4;">Sign in With Google</button>
+                              </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>  
+          <!-- Model1 (Dialog-box) End -->
+
+          <!-- Model2 (Dialog-box) start -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                <div class="modal-dialog modal-xl modal-dialog-centered " >
+                  <div class="modal-content forDialogBoxRadius2">
+                    <div class="modal-body p-0"  >
+                      <div class="row" >
+                        <div class="col">
+                          <img src="/Images/img1.png" alt="" srcset="" class="w-100 opacity-100" style="border-radius: 23px 0px 0px 23px; padding: 0.6px; " >
+                            <a href="#" class="navbar-brand ms-4 mt-1 text-decoration-none" 
+                              style="position: absolute;
+                              left: 13px;
+                              top: 25px;
+                              z-index: 0;"><img src="/Images/Expert-removebg-preview.png" alt="" width="80">
+                            <p class="text-white fs-6">ExpertDesk</p> 
+                          </a>
+                        </div>
+                        <div class="col" >
+                          <div class="row mt-3">
+                            <div class="col">
+                              <div class=" d-flex justify-content-center" >
+                                <button type="button" class="border-0 bg-white text-muted " data-bs-toggle="modal" data-bs-target="#exampleModalLogin" style="font-size: 18px;">
+                                  Login
+                                </button> 
+                              </div>
+                            </div>
+                            
+                            <div class="col">
+                              <div class="d-flex justify-content-center" id="forDialogSignUpButtonColor" >
+                                <button type="button" class="border-0 text-white fw-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color:  #00B5F0;">
+                                  Sign Up
+                                </button>
+                              </div>
+                            </div>
+                              <button type="button" class=" btn-close btn-close bg-dark text-white rounded-circle p-2" data-bs-dismiss="modal" aria-label="Close" style="margin: -32px -21px;" ></button>
+                          </div>
+                          
+                          
+                          <form action="" style="margin: 40px 30px;">
+                            <div class="row">
+                              <div class="col-2">
+                                <select  class="form-select text-muted" style="height: 47px; width: 69px;">
+                                  <option selected>Mr</option>
+                                  <option>Ms</option>
+                                  <option>Others</option>
+                                </select>
+                              
+                              </div>
+
+                              <div class="col-10 ">
+                                <input type="text" placeholder="Name" class=" form-control-lg w-100 form-control"><br>
+                              </div>
+                            </div>
+                            <input type="text" placeholder="Mobile Number(OTP required)" class="form-control-lg w-100 form-control"><br>
+                            <input type="text" placeholder="Email Id" class="form-control-lg w-100 form-control"><br>
+                            <input type="text" placeholder="Date of Birth" class="form-control-lg w-100 form-control "><br>
+                            <button class=" p-2 fs-5 w-100 text-white border-0 rounded-2 text-uppercase fw-light" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #4285F4;">Sigh up</button>
+                            
+                            <div class="d-flex justify-content-center m-3 text-muted ">
+                              <hr style="width: 50%;">
+                              <p class="m-1">OR</p>
+                              <hr style="width: 50%;">
+                              </div> 
+                              <div class="position-relative">
+                              <img src="/Images/Google-removebg-preview.png" alt="" srcset="" class=" bg-white position-absolute m-2  rounded-1 " style="top: -1px; left: 3px;"> 
+                                <button class=" p-2 fs-5 w-100 text-white border-0 rounded-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #4285F4;">Sign in With Google</button>
+                              </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>  
+          <!-- Model2 (Dialog-box) End -->
+            
+          <!-- Navbar start -->
+          <nav class="navbar navbar-expand-lg forNavbar" >
+                <!-- <div class="container d-flex justify-content-between"> -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button> 
+                  <!-- <div class="d-flex justift-content-center text-center"> -->
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                    <ul class="navbar-nav mx-auto mx-md-auto text-uppercase ">
+                          <li class="nav-item mx-4 forStartUp" >
+                                <a class="nav-link active  text-white" href="#">Start Up</a>
+                          </li>
+      
+                          <li class="nav-item mx-4 bg-white text-black BCON">
+                              <a class="nav-link active" href="#">Business CONVERSION</a>
+                          </li>
+      
+                          <li class="nav-item mx-4 bg-white text-black CLOS">
+                              <a class="nav-link active" href="#">Business closure</a>
+                          </li>
+      
+                          <li class="nav-item mx-4 bg-white text-black INTEL">
+                              <a class="nav-link active" href="#">INTELLECTUAL property</a>
+                          </li>
+      
+                          <li class="nav-item mx-4 bg-white text-black COM">
+                              <a class="nav-link active" href="#">compliance</a>
+                          </li>
+      
+                          <li class="nav-item mx-4 bg-white text-black FILL">
+                              <a class="nav-link active" href="#">tex FILLING</a>
+                          </li>
+      
+                          <li class="nav-item mx-4 bg-white text-black LEGAL">
+                              <a class="nav-link active" href="#">legal</a>
+                          </li>
+                  </ul>
+                <!-- </div>  -->
+              </div> 
+              <!-- </div> -->
+          </nav>
+           <!-- Navbar End -->
+
+            <!-- Navbar Right Start"-->
+            <div id="mySidenav" class="sidenav" style="z-index: 1; display: none;" data-bs-toggle="modal">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#" class="fs-6 "><i class="fa-solid fa-cart-shopping me-4 fs-4 "></i>My orders</a>
+              <a href="#" class="fs-6 "><i class="fa-solid fa-calendar-check me-4 fs-4"></i>Transaction History</a>
+              <a href="#" class="fs-6 " style="background-color: #848587;" data-bs-toggle="modal" data-bs-target="#exampleModalCustmor"><i class="bi bi-chat-right-dots-fill me-4 fs-4"></i>Custmor Support</a>
+              <a href="#" class="fs-6 "><i class="fa fa-duotone fa-phone-volume me-4 fs-4"></i>Consult Now</a>
+              <a href="#" class="fs-6 " href="/Book service.html" target="_self"><i class="bi bi-check2-circle me-4 fs-4"></i>Book a Service</a>
+              <a href="#" class="fs-6 "><i class="material-icons me-4 fs-4">g_translate</i>Language prefference</a>
+              <a href="#" class="fs-6"><i class="fa-solid fa-file-pen me-4 fs-4"></i>Write a Feedback</a>
+            </div>
+            <!-- Navbar Right End -->
+
+          <!-- Modal Custmor Service start -->
+             <div class="modal fade" id="exampleModalCustmor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content forDialogCustmorSupport" >
+                  <div class="modal-header position-relative" style="background-color: #00B5F0; border-radius: 20px 20px 0px 0px;">
+                    <h1 class="modal-title fs-5 opacity-75" id="exampleModalLabel" style="margin: 0px 243px;" >Custmor Support</h1>
+                    <span class="position-absolute d-inline-block rounded-circle bg-black" style="right: -35px; top: -23px; padding: 7px 10px 4px 4px; transition: .3s;" >
+                      <button type="button" class="btn-close btn-close-white fw-bold" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </button>
+                    </span>
+                  </div>
+                  <div class="modal-body py-4 px-5 text-muted">
+                    You can count on our team of highly skilled customer experience service experts who take personal pride in give to notch service to each and every customer.
+                    <div class="row py-4">
+                      <div class="col-sm-4">
+                        <div style="background-color: #F2F2F2;padding: 45px 16px; " class=" rounded text-center"> 
+                          <i class="fa fa-thin fa-comments rounded-circle text-white p-4 fs-3" style="border: 1px solid #61BE80; background-color: #61BE80;"></i>
+                          <p class="pt-4 fw-bold">Live Chat Support</p>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-4">
+                        <div style="background-color: #F2F2F2;padding: 50px 16px; " class="rounded text-center">
+                          <i class="bi bi-envelope rounded-circle text-white p-3" style="border: 1px solid #5B42F0;
+                          background-color: #5B42F0;
+                          font-size: 30px;
+                          padding: 14px 22px !important;"></i>
+                          <p class="pt-5 fw-bold">Email Support</p>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-4">
+                        <div style="background-color: #F2F2F2;padding: 45px 16px; " class="rounded text-center">
+                          <i class="fa-solid fa-phone-volume rounded-circle text-white p-4 fs-3" style="border: 1px solid #D34E6D; background-color: #D34E6D;"></i>
+                          <p class="pt-4 fw-bold">Call Support</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+          <!-- Modal Custmor Service End-->
+
+
+            
+
+
+<!-- main img -->
+<span>
+  <img src="/Images/Expert-new.png" alt="" srcset="" class="w-100 img-fluid">
+</span>
+<div class="row" style="background-color: #9C9C9D;">
+  <div class=" d-flex col-5 offset-7 justify-content-start p-1 AcnSetting">
+      <p  class="text-white  AVIA">Available Balance:     200    ₹</p>
+      <button  type="button" class="btn btn btn-outline-success mx-lg-5" >Rechareg</button>
+      <p  class="text-white IDFORACN"  >ID:   1568725</p>
+  </div>
+</div>
+      <section >
+          <div class="row position-relative">
+          <strong class="text-center fs-4 text-uppercase my-5" style=" color: #4e4f51;"> S<span class=" forOurExperts"></span>tart up</strong>
+          </div>
+          <div class="container StartUp1">
+            <div class="row mx-auto"id="forPublicPage" style=" box-shadow: 0px 0px 5px 5px #ccc;">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-12  text-white" style="background-color: #4E4F51; width: 309px;padding-top: 60px;" >
+                   <p class="text-black-50 bg-white p-3" style="width: 298px;">India Business Registration</p>
+                    <p class="px-3 text-light" >Goverment Licenses</p>
+                    <hr class="bg-white border-0" style="height: 1.5px; width: 330px;">
+                    <p class="px-3 text-light">Business CLosure/CLosure</p>
+                    <hr class="bg-white border-0" style="height: 1.5px; width: 330px;">
+              </div>
+
+              <div class="col-lg-8 col-md-8 col-sm-6 col-12  py-2 " >
+                    <h6 class="fw-bold fs-5 p-3">FAQ</h6>
+                    <p class="  py-3" style="border: 1px solid #B9B8B8; color: #60CDF0; background-color: #F0F0F0;"><i class="fa-solid fa-plus fs-4 fw-bold  px-3" style="color: #00B5F0;"></i> Lorem Ipsum is Simply dummy text</p>
+                    <p class="  py-3" style="border: 1px solid #B9B8B8; color: #60CDF0; background-color: #F0F0F0;"> <i class="fa-solid fa-plus fs-4 fw-bold px-3" style="color: #00B5F0;"></i>Lorem Ipsum is Simply dummy text</p>
+                    <p class="  py-3" style="border: 1px solid #B9B8B8; color: #60CDF0; background-color: #F0F0F0;"><i class="fa-solid fa-plus fs-4 fw-bold  px-3" style="color: #00B5F0;"></i> Lorem Ipsum is Simply dummy text</p>
+                    <p  class="  py-3" style="border: 1px solid #B9B8B8; color: #60CDF0; background-color: #F0F0F0;"> <i class="fa-solid fa-minus fs-4 fw-bol px-3" style="color: #00B5F0"></i>Lorem Ipsum is Simply dummy text</p>
+
+                    <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing PageMaker including versions of Lorem Ipsum.</p>
+
+                    <p class="  py-3" style="border: 1px solid #B9B8B8; color: #60CDF0; background-color: #F0F0F0;"><i class="fa-solid fa-plus fs-4 fw-bold  px-3" style="color: #00B5F0;"></i> Lorem Ipsum is Simply dummy text</p>
+                    <p class="  py-3" style="border: 1px solid #B9B8B8; color: #60CDF0; background-color: #F0F0F0;"> <i class="fa-solid fa-plus fs-4 fw-bold px-3" style="color: #00B5F0;"></i>Lorem Ipsum is Simply dummy text</p>
+                    <p class="  py-3" style="border: 1px solid #B9B8B8; color: #60CDF0; background-color: #F0F0F0;"><i class="fa-solid fa-plus fs-4 fw-bold  px-3" style="color: #00B5F0;"></i> Lorem Ipsum is Simply dummy text</p>
+                    <button type="button" class="btn text-white text-center my-4 d-flex m-auto text-center" style="background-color: #00B5F0;">Consult Now</button>
+            </div>
+            
+            </div>
+          </div>
+        </section>
+
+
+      <!-- Footer -->
+      <footer class="text-center text-light mt-5" style="background-color: #4E4F51;">
+        <section class=" pt-3  ">
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  About Us
+                </h6>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident molestiae reprehenderit debitis sit quasi natus rem odit fugit quaerat. Omnis cupiditate voluptatibus exercitationem tenetur dolor repudiandae corrupti voluptas numquam nostrum. </p>
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  QUICK links
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset text-decoration-none">Terms & Condition</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset text-decoration-none">Privacy Policy</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset text-decoration-none">About us</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset text-decoration-none">Disclaimer</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-reset text-decoration-none fw-bold">Expert signin/signup</a>
+                  </p>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-2 mx-auto  mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Contact us</h6>
+                <p><i class="fas fa-phone me-3"></i>+91-9625383790</p>
+                <p><i class="fas fa-envelope me-3"></i>info@gmail.com</p>
+                <h6 class="text-uppercase fw-bold mb-4">find us on</h6>
+                <section class="mb-4">
+                    <a class="btn  bg-white btn-floating rounded-circle m-1 text-black" href="https://www.facebook.com/TheBrancoSoft/" role="button"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a class="btn bg-white btn-floating rounded-circle m-1 text-black" href="https://in.linkedin.com/company/brancosoft" role="button"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                    <a class="btn bg-white btn-floating rounded-circle m-1 text-black" href="https://mobile.twitter.com/brancosoft" role="button"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </section>
+              </div>
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto   mb-md-0  mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  download our app
+                </h6>
+                <img src="/Images/google_pay.jpg" alt="" srcset="" class="rounded img-fluid ">
+                <img src="/Images/Google-Play.jpg" alt="" class="mt-lg-4 rounded img-fluid mt-md-3">
+              </div>
+            </div>
+            <hr>
+          </div>
+        </section>
+      <div class="text-center pb-4" >
+        © 2020 ExpertDesk, Inc. All Right Reserved
+      </div>
+      </footer>
+      <!-- Footer -->
+    <script src="/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

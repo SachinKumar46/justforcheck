@@ -1,0 +1,974 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+
+
+@font-face {
+  font-family: Poppins;
+  src: url("/Poppins/");
+}
+/* @font-face {
+  font-family: 'Regular';
+  src: url('./fonts/Metropolis-Regular.woff2');
+} */
+
+.headerTop {
+  background-color: #4e4f51;
+  font-family: "Poppins", sans-serif;
+}
+
+
+ /* nav {
+  width: 100%;
+}
+nav ul {
+  float: right;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0px 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+  font-family: Poppins-Light;
+  
+} */
+
+/* tooltip */
+.contain {
+  position: relative;
+  display: inline-block;
+}
+
+.contain .tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: #5ac8eb;
+  color: white;
+  border-radius: 20px;
+  padding: 15px 5;
+  margin-left: 15px;
+  position: absolute;
+  z-index: 1;
+}
+
+.contain:hover .tooltiptext {
+  visibility: visible;
+}
+
+.forBoderBottom {
+  position: absolute;
+  display: inline-block;
+  border-bottom: 5px solid #4e4f51;
+  width: 70px;
+  top: 84px;
+}
+
+.forButtonHowItWork {
+  position: absolute;
+  display: inline-block;
+  border-bottom: 5px solid white;
+  width: 70px;
+  right: 0px;
+  left: 45%;
+  top: 45px;
+}
+
+.forOurExperts {
+  position: absolute;
+  display: inline-block;
+  border-bottom: 5px solid #4e4f51;
+  width: 70px;
+  top: 84px;
+}
+
+.searchIcon {
+  /* height: px; */
+  /* width: 40px; */
+  padding: 11px;
+  /* left: 0px; */
+  right: 0;
+  top: 10px;
+  margin-top: -10px;
+  opacity: 1;
+  background-color: #00b5f0;
+  border-left: 2px solid #00b5f0;
+}
+
+.forStartUp {
+  /* margin-bottom: -8px; */
+  background-color: #00b5f0;
+  /* margin-top: -8px; */
+  /* padding: 8px 0px; */
+}
+
+.forconsultNow {
+  font-family: Poppins-Medium;
+}
+
+.Girls {
+  font-family: Poppins-Regular;
+}
+.forNavbar {
+  font-family: Poppins-Light;
+  color: rgb(68, 68, 68);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* For Dialog 1 */
+.forDialogBoxRadius1 {
+  border-radius: 25px;
+  margin: 125px 65px;
+  height: 493px;
+}
+
+#forDialogLoginButtonColor {
+  background-color: #00b5f0;
+  height: 65px;
+  padding: 0.6px;
+  margin: -16px -24px;
+  width: 106%;
+}
+
+/* for Dialog 2 */
+.forDialogBoxRadius2 {
+  border-radius: 25px;
+  margin: 125px 65px;
+  height: 565px;
+}
+
+#forDialogSignUpButtonColor {
+  background-color: #00b5f0;
+  height: 65px;
+  border-radius: 0px 25px 0px 0px;
+  padding: 18.6px;
+  margin: -16px -25px;
+  width: 106%;
+}
+
+/* FOR EXPERT PAGE */
+
+.starYellow {
+  color: #fdb62f;
+}
+
+#onlineNowColor {
+  background-color: #17ad03;
+  padding: 5px 30px;
+}
+
+#forAvialableButton {
+  background-color: #f11616;
+  padding: 5px 20px;
+}
+
+.verifiedline {
+  transform: rotate(-49deg);
+  width: 72px;
+  height: fit-content;
+  padding: 16px 11px;
+  padding-block-start: inherit;
+  padding: -44px -16px;
+  height: 0vh;
+  margin-top: 24px;
+  margin-left: -6px;
+  font-size: small;
+  background-color: #00b5f0;
+  /* clip-path: polygon(0% 100%, 0% 100%, 100% 100%,100% 0%); */
+  /* clip-path: polygon(0% 100%, 100% 0%); */
+  /* clip-path: inset(5% 20% 15% 10%); */
+}
+
+.forImageRadius {
+  border: 1px solid rgb(161, 162, 163);
+  padding: 5px;
+  margin: 17px 91px;
+}
+
+/* Notification page */
+
+.IconPopup {
+  margin-top: 200px;
+}
+#NotificationBell {
+  background-color: #f96867;
+  font-size: x-small;
+  padding: 0px 5px;
+}
+
+#leftContainer {
+  width: 55%;
+  /* border: 1px solid #c3c3c3; */
+  display: inline-block;
+  padding: 0px 80px;
+}
+#leftContainer .First {
+  margin-left: 10px;
+}
+
+#leftContainer .First button {
+  margin-right: 400px;
+}
+
+#leftContainer .Second strong {
+  /* margin-left:400px; */
+  /* float: right; */
+  /* text-align: center; */
+  margin: auto;
+  width: 500px;
+  /* width: auto; */
+}
+.marginSetForCards {
+  margin-left: 52px;
+  margin-top: -17px;
+  margin-bottom: -12px;
+}
+
+.BasicButton {
+  background-color: #00b5f0;
+  width: 143px;
+  margin: -15px -20px;
+  padding: 17px;
+}
+
+.StandradPremiumButton {
+  background-color: #e8e8e8;
+  width: 76%;
+  margin-left: 123px;
+  padding: 17px;
+  margin-top: -58px;
+}
+.BulletLine {
+  border-left: 2px solid wheat;
+  position: absolute;
+  padding: 16px;
+  display: block;
+  left: 19px;
+}
+
+/* school page */
+
+
+
+/* Public Page */
+#forPublicPage {
+  font-family: Poppins-Light;
+}
+
+/* payment page */
+
+input.largerCheckbox {
+  width: 20px;
+  height: 17px;
+  margin: 20px 0px;
+}
+
+#poppinsRegularForPayment {
+  font-family: Poppins-Regular;
+}
+
+/* ExpertSignUp3 page */
+#ExpertSignUp3PageBasicInfo {
+  border-bottom: 4px solid #62a8ea;
+  top: 21px;
+  width: 261px;
+  left: 37px;
+  display: block;
+  position: absolute;
+}
+
+#ExpertSignUp3PagePublicProfile {
+  border-bottom: 4px solid #62a8ea;
+  top: 21px;
+  width: 279px;
+  left: 46px;
+  display: block;
+  position: absolute;
+}
+
+#ExpertSignUp3PagePublicPaymentSetting {
+  border-bottom: 4px solid #62a8ea;
+    top: 21px;
+    width: 190px;
+    left: 44px;
+    display: block;
+    position: absolute;
+}
+
+#ExpertSignUp3PagePublicPaymentSettinges {
+  border-bottom: 4px solid #f3f7f9;
+  top: 21px;
+  width: 153px;
+  left: 228px;
+  display: block;
+  position: absolute;
+}
+
+/* ExpertSignup4 page */
+#ExpertSignUp4PagePublicPaymentSetting {
+  border-bottom: 4px solid #f3f7f9;
+    top: 21px;
+    width: 118px;
+    left: 183px;
+    display: block;
+    position: absolute;
+}
+
+/* ExpertSignUp1 page */
+.MyPracticAreaInputBox1 {
+  background-color: #e4eaec;
+  top: 6px;
+  left: 11px;
+}
+
+.MyPracticAreaInputBox2 {
+  background-color: #e4eaec;
+  top: 7px;
+  left: 124px;
+}
+
+.MyPracticAreaInputBox3 {
+  top: 7px;
+  left: 240px;
+}
+
+.MinuteInput {
+  background-color: #f3f7f9;
+  padding: 7px 21px;
+  top: 0px;
+  border-left: 1px solid #ccc;
+}
+
+/* for  SignUp page  */
+
+.ExpertSignUpPageBasciInfos {
+  border-bottom: 4px solid #62a8ea;
+  top: 21px;
+  width: 112px;
+  left: 154px;
+  display: block;
+  position: absolute;
+}
+
+.ExpertSignUpPageBasciInfossss {
+  border-bottom: 4px solid #f3f7f9;
+  top: 21px;
+  width: 112px;
+  left: 267px;
+  display: block;
+  position: absolute;
+}
+#ExpertSignUpPagePublicProfile {
+  border-bottom: 4px solid #f3f7f9;
+  top: 21px;
+  width: 224px;
+  left: 156px;
+  display: block;
+  position: absolute;
+}
+
+#ExpertSignUpPagePaymentSetting {
+  border-bottom: 4px solid #f3f7f9;
+  top: 21px;
+  width: 224px;
+  left: 156px;
+  display: block;
+  position: absolute;
+}
+
+/* ExpertSignUp */
+#ExpertSignUp2PageBasicInfo {
+  border-bottom: 4px solid #62a8ea;
+  top: 21px;
+  width: 227px;
+  left: 152px;
+  display: block;
+  position: absolute;
+}
+#ExpertSignUp2PagePublicPaymentSetting {
+  border-bottom: 4px solid #62a8ea;
+  top: 21px;
+  width: 116px;
+  left: 155px;
+  display: block;
+  position: absolute;
+}
+
+#ExpertSignUp2PagePublicPaymentSettinges {
+  border-bottom: 4px solid #f3f7f9;
+  top: 21px;
+  width: 116px;
+  left: 263px;
+  display: block;
+  position: absolute;
+}
+
+/* Book Service Page */
+
+.RechargeBookButton {
+  border: 1.6px solid #17ad03;
+  color: #17ad03;
+  padding: 5px 18px;
+}
+
+/* chat apge */
+.triangle-right {
+  width: 0;
+  height: 0;
+  left: 98%;
+  z-index: 0;
+  top: 14px;
+  border-top: 13px solid transparent;
+  border-left: 22px solid #00b5f0;
+  border-bottom: 13px solid transparent;
+}
+.triangle-right-okThanks {
+  width: 0;
+  height: 0;
+  left: 93%;
+  z-index: 0;
+  top: 10px;
+  border-top: 13px solid transparent;
+  border-left: 22px solid #00b5f0;
+  border-bottom: 13px solid transparent;
+}
+
+.triangle-left-startup {
+  width: 0;
+  height: 0;
+  right: 95%;
+  z-index: 0;
+  top: 11px;
+  border-top: 13px solid transparent;
+  border-right: 22px solid #ebebeb;
+  border-bottom: 13px solid transparent;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  right: 98%;
+  z-index: 0;
+  top: 14px;
+  border-top: 13px solid transparent;
+  border-right: 22px solid #ebebeb;
+  border-bottom: 13px solid transparent;
+}
+
+#FontFamilyForCreateService {
+  font-family: Poppins-Light;
+}
+/* Create service page */
+.forCreateService {
+  margin-bottom: -8px;
+  padding: 12px 0px;
+  background-color: #00b5f0;
+  margin-top: -8px;
+  width: 184px;
+  text-align: center;
+}
+
+/* toggle button */
+.SwitchButtonCreateService {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 27px;
+  margin: 0px 3px;
+}
+
+.SliderDoubleCreateService {
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  left: -18px;
+  right: 13px;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white;
+  padding: 2px 9px;
+  border-radius: 34px;
+}
+
+.SliderOFFCreateService {
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  left: -22px;
+  right: 17px;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white;
+  padding: -9px 9px;
+  border-radius: 34px;
+}
+
+.SliderDoubleCreateService:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 17px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.SliderOFFCreateService:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .SliderDoubleCreateService {
+  background-color: #2196f3;
+}
+
+input:checked + .SliderOFFCreateService {
+  background-color: #2196f3;
+}
+
+input:checked + .SliderDoubleCreateService:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+input:checked + .SliderOFFCreateService:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* for dropdown */
+.triangle-up {
+  width: 0;
+  height: 0;
+  left: 138px;
+  top: -16px;
+  bottom: 235px;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 17px solid white;
+}
+
+/* for CreateService1  page*/
+
+.SwitchButtonCreateService1 {
+  position: relative;
+  display: inline-block;
+  width: 71px;
+  height: 33px;
+}
+
+.SliderDoubleCreateService1 {
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  left: -5px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white;
+  padding: 3px 9px;
+  border-radius: 34px;
+}
+
+.SliderOFFCreateService1 {
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  left: -5px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white;
+  padding: 5px 9px;
+  border-radius: 34px;
+}
+
+.SliderDoubleCreateService1:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 25px;
+  bottom: 5px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.SliderOFFCreateService1:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 5px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .SliderDoubleCreateService1 {
+  background-color: #2196f3;
+}
+
+input:checked + .SliderOFFCreateService1 {
+  background-color: #2196f3;
+}
+
+input:checked + .SliderDoubleCreateService1:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+input:checked + .SliderOFFCreateService1:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* CustmorSupport page 1 */
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1; 
+  overflow-y:scroll;
+  top: 91px;
+  right: 0;
+  background-color: #959597;
+  overflow-x: hidden;
+  /* transition: 0.3s; */
+  padding-top: 60px;
+}
+
+.sidenav::-webkit-scrollbar {
+  display: none;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #555759;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/* custmor support dialog box */
+.forDialogCustmorSupport {
+  margin: 130px 80px;
+  height: 490px;
+  width: 720px;
+  margin-left: 160px;
+  border-radius: 20px;
+}
+
+/* ForStratUp1 page */
+
+.StartUp1 {
+  font-family: Poppins-Light;
+}
+
+/* Expert Login */
+#cb1 {
+  width: 22px;
+  height: 22px;
+}
+
+/* Service Page */
+
+.ServiceTable td {
+  padding: 1.7px;
+  border-bottom: 1.6px solid #bcc0c1;
+  font-size: 15px;
+}
+
+.ServiceTable th {
+  background-color: #ebebeb;
+  padding: 12px;
+  color: #4d4f51;
+  font-weight: 500;
+  font-size: medium;
+}
+
+/* NOtification page tab */
+.tab{
+  background-color: #E8E8E8;
+  overflow: hidden;
+}
+
+.tab button{
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+  padding: 12px 14px;
+  float: left;
+  width: 160px;
+}
+/* .tab button:hover{
+  background-color: #5ac8eb;
+} */
+
+.tab button.active {
+  background-color: #00b5f0;
+  /* margin-left: -11px; */
+}
+.tab button::after{
+  width: 200px;
+  background-color: #00b5f0;
+  margin: 0;
+
+}
+
+#navbarSupportedContent1{
+  margin: -8px 0px;
+}
+
+
+  /* for Dashboard page */
+/* Hamberger */
+@media only screen and (max-width: 1024px)  {
+  .hamburgerTop {
+    margin-left: -10px !important;
+  }
+  
+  #navbarSupportedContent .InputBox{
+    width: 332px;
+  }
+  #navbarSupportedContent .OurService .ORS a{
+    margin: left 15px;
+  }
+}
+
+  @media only screen and (max-width: 1280px) {
+    .hamburgerTop{
+      margin: 0 auto;
+      width: 100%;
+    }
+  
+    .hamburgerTop a{
+      margin-left: 35px;
+    }
+    .hamburgerTop a img{
+      width: 60px;
+      margin:auto 0;
+    }
+  
+    .hamburgerTop a p{
+      font-size: medium;
+    }
+  
+    
+    #navbarSupportedContent .InputBox input{
+      width: 360px;
+    }
+  
+    #navbarSupportedContent .InputBox i{
+      height: inherit;
+    }
+  
+    
+    #navbarSupportedContent .OurService li a{
+      width: max-content;
+      margin: 0px auto;
+      font-size: medium;
+    }
+  
+    #navbarSupportedContent .ConsultNowButton button{
+      background-color: #00B5F0;
+      font-size: medium;
+      width: max-content;
+      }
+    }
+
+    
+    
+    /* Navbar */
+    @media only screen and (max-width: 1024px)  {
+      #navbarSupportedContent1 .forStartUp  a{
+        width: max-content;
+        padding-top: 13px;
+        font-size: small;
+      }
+
+      #navbarSupportedContent1 .BCON  a{
+        width: max-content;
+        padding-top: 13px;
+        font-size: small;
+        margin: 0px -47px;
+      }
+
+      #navbarSupportedContent1 .CLOS  a{
+        width: max-content;
+        padding-top: 13px;
+        font-size: small;
+      }
+
+      #navbarSupportedContent1 .INTEL  a{
+        width: max-content;
+        padding-top: 13px;
+        font-size: small;
+        margin: 0px -47px;
+      }
+
+      #navbarSupportedContent1 .COM  a{
+        width: max-content;
+        padding-top: 13px;
+        font-size: small;
+      }
+
+      #navbarSupportedContent1 .FILL  a{
+        width: max-content;
+        padding-top: 13px;
+        font-size: small;
+        margin: 0px -47px;
+      }
+
+      #navbarSupportedContent1 .LEGAL  a{
+        width: max-content;
+        padding-top: 13px;
+        font-size: small;
+      }
+}
+
+@media only screen and (max-width: 1280px)  {
+  #navbarSupportedContent1 .forStartUp  a{
+    width: max-content;
+    padding-top: 13px;
+  }
+
+  #navbarSupportedContent1 .BCON  a{
+    width: max-content;
+    padding-top: 13px;
+    margin: 0px -30px;
+  }
+
+  #navbarSupportedContent1 .CLOS  a{
+    width: max-content;
+    padding-top: 13px;
+  }
+
+  #navbarSupportedContent1 .INTEL  a{
+    width: max-content;
+    padding-top: 13px;
+    margin: 0px -30px;
+  }
+
+  #navbarSupportedContent1 .COM  a{
+    width: max-content;
+    padding-top: 13px;
+  }
+
+  #navbarSupportedContent1 .FILL  a{
+    width: max-content;
+    padding-top: 13px;
+    margin: 0px -30px;
+  }
+
+  #navbarSupportedContent1 .LEGAL  a{
+    width: max-content;
+    padding-top: 13px;
+  }
+}
+
+
+/* Accounting Setting page */
+@media (max-width:500px) and (min-width:374px) {
+  .AcnSetting{
+    display: inline-block !important;
+    margin: auto;
+    text-align: center;
+  }
+
+  .AcnSetting .AVIAL{
+    display: inline;
+  }
+  .AcnSetting .IDFORACN{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:768px) and (min-width:499px) {
+  .AcnSetting{
+    display: inline-block;
+    margin: auto;
+    /* text-align: center; */
+    align-items: center;
+  }
+  .AcnSetting .AVIAL{
+    display: inline;
+    width: max-content;
+  }
+}
+
+  
+
+
+  /* Book Service page */
+  @media (max-width:768px) and (min-width:374px) {
+    .BookService{
+      display: inline;
+      margin: auto;
+      background-color: #E6E7E7;
+    }
+    
+  }
